@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Cura Healthcare" verbose="2" 
+parallel="tests" thread-count="2">
+
+	<test name="Login tests ">
+		<packages>
+			<package name="com.curahealthecareTestNG.Tests.login"></package>
+		</packages>
+	</test>
+	
+	<test name="Make Appointment tests">
+		<packages>
+			<package name="com.curahealthecareTestNG.Test.MakeAppoitment"></package>
+		</packages>
+	</test>
+
+</suite>

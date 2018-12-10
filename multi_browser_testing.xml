@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Cura Healthcare" parallel= "tests" thread-count="2">
+	
+	<test name="Login tests using chrome">
+	
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.curahealthecareTestNG.Tests.login.LoginTests"></class>
+			<class name="com.curahealthecareTestNG.Tests.MakeAppointment.MakeAppointmentTest"></class>
+		</classes>
+	</test>
+	
+	<test name="Login tests using Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.curahealthecareTestNG.Tests.login.LoginTests"></class>
+			<class name="com.curahealthecareTestNG.Tests.MakeAppointment.MakeAppointmentTest"></class>
+		</classes>
+	</test>
+
+</suite>

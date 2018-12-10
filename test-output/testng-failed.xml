@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [Cura Healthcare]" parallel="tests">
+  <test thread-count="2" verbose="2" name="Make Appointment tests(failed)" parallel="tests">
+    <classes>
+      <class name="com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
+          <include name="makeAppointmentTest"/>
+          <include name="tearDown"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest -->
+    </classes>
+  </test> <!-- Make Appointment tests(failed) -->
+  <test thread-count="2" verbose="2" name="Login tests (failed)" parallel="tests">
+    <classes>
+      <class name="com.curahealthecareTestNG.Tests.login.LoginTests">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="positiveloginTest"/>
+          <include name="setUpTest"/>
+        </methods>
+      </class> <!-- com.curahealthecareTestNG.Tests.login.LoginTests -->
+    </classes>
+  </test> <!-- Login tests (failed) -->
+</suite> <!-- Failed suite [Cura Healthcare] -->
