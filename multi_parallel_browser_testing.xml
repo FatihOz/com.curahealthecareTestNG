@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Cura Healthcare Tests" verbose="2">
+
+
+	<test name="Login tests using chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<packages>
+			<package name="com.curahealthecareTestNG.Tests.login"></package>
+		</packages>
+	</test>
+
+	<test name="Make Appoitmenttests using Firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<packages>
+			<package name="com.curahealthecareTestNG.Test.MakeAppoitment"></package>
+		</packages>
+	</test>
+
+</suite>

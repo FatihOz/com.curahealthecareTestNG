@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Cura Healthcare Tests" duration-ms="23832" started-at="2018-12-10T05:08:40Z" finished-at="2018-12-10T05:09:04Z">
+  <suite name="Cura Healthcare Tests" duration-ms="38351" started-at="2018-12-10T05:21:39Z" finished-at="2018-12-10T05:22:18Z">
     <groups>
     </groups>
-    <test name="Login tests using chrome" duration-ms="6411" started-at="2018-12-10T05:08:40Z" finished-at="2018-12-10T05:08:46Z">
+    <test name="Login tests using chrome" duration-ms="6678" started-at="2018-12-10T05:21:39Z" finished-at="2018-12-10T05:21:46Z">
       <class name="com.curahealthecareTestNG.Tests.login.LoginTests">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="setUpTest" is-config="true" duration-ms="207" started-at="2018-12-10T05:08:40Z" finished-at="2018-12-10T05:08:40Z">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="setUpTest" is-config="true" duration-ms="190" started-at="2018-12-10T05:21:39Z" finished-at="2018-12-10T05:21:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="setUp" is-config="true" duration-ms="2698" started-at="2018-12-10T05:08:40Z" finished-at="2018-12-10T05:08:43Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="setUp" is-config="true" duration-ms="3002" started-at="2018-12-10T05:21:40Z" finished-at="2018-12-10T05:21:43Z">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="positiveloginTest()[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="positiveloginTest" duration-ms="891" started-at="2018-12-10T05:08:43Z" finished-at="2018-12-10T05:08:44Z">
+        <test-method status="PASS" signature="positiveloginTest()[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="positiveloginTest" duration-ms="808" started-at="2018-12-10T05:21:43Z" finished-at="2018-12-10T05:21:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- positiveloginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="tearDown" is-config="true" duration-ms="76" started-at="2018-12-10T05:08:44Z" finished-at="2018-12-10T05:08:44Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="tearDown" is-config="true" duration-ms="79" started-at="2018-12-10T05:21:43Z" finished-at="2018-12-10T05:21:44Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="setUp" is-config="true" duration-ms="1479" started-at="2018-12-10T05:08:44Z" finished-at="2018-12-10T05:08:45Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="setUp" is-config="true" duration-ms="1525" started-at="2018-12-10T05:21:44Z" finished-at="2018-12-10T05:21:45Z">
           <params>
             <param index="0">
               <value>
@@ -48,11 +48,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="invalidUsernameTest()[pri:1, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="invalidUsernameTest" duration-ms="712" started-at="2018-12-10T05:08:45Z" finished-at="2018-12-10T05:08:46Z">
+        <test-method status="PASS" signature="invalidUsernameTest()[pri:1, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="invalidUsernameTest" duration-ms="715" started-at="2018-12-10T05:21:45Z" finished-at="2018-12-10T05:21:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidUsernameTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="tearDown" is-config="true" duration-ms="75" started-at="2018-12-10T05:08:46Z" finished-at="2018-12-10T05:08:46Z">
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="tearDown" is-config="true" duration-ms="77" started-at="2018-12-10T05:21:46Z" finished-at="2018-12-10T05:21:46Z">
           <params>
             <param index="0">
               <value>
@@ -63,7 +63,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownTest(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="tearDownTest" is-config="true" duration-ms="253" started-at="2018-12-10T05:08:46Z" finished-at="2018-12-10T05:08:46Z">
+        <test-method status="PASS" signature="tearDownTest(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@77cd7a0]" name="tearDownTest" is-config="true" duration-ms="262" started-at="2018-12-10T05:21:46Z" finished-at="2018-12-10T05:21:46Z">
           <params>
             <param index="0">
               <value>
@@ -76,13 +76,13 @@
         </test-method> <!-- tearDownTest -->
       </class> <!-- com.curahealthecareTestNG.Tests.login.LoginTests -->
     </test> <!-- Login tests using chrome -->
-    <test name="Login tests using Firefox" duration-ms="17391" started-at="2018-12-10T05:08:46Z" finished-at="2018-12-10T05:09:04Z">
-      <class name="com.curahealthecareTestNG.Tests.login.LoginTests">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@490ab905]" name="setUpTest" is-config="true" duration-ms="1" started-at="2018-12-10T05:08:46Z" finished-at="2018-12-10T05:08:46Z">
+    <test name="Login tests using Firefox" duration-ms="31658" started-at="2018-12-10T05:21:46Z" finished-at="2018-12-10T05:22:18Z">
+      <class name="com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest@56ac3a89]" name="setUpTest" is-config="true" duration-ms="2" started-at="2018-12-10T05:21:46Z" finished-at="2018-12-10T05:21:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@490ab905]" name="setUp" is-config="true" duration-ms="8980" started-at="2018-12-10T05:08:46Z" finished-at="2018-12-10T05:08:55Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest@56ac3a89]" name="setUp" is-config="true" duration-ms="7190" started-at="2018-12-10T05:21:46Z" finished-at="2018-12-10T05:21:53Z">
           <params>
             <param index="0">
               <value>
@@ -93,48 +93,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="positiveloginTest()[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@490ab905]" name="positiveloginTest" duration-ms="789" started-at="2018-12-10T05:08:55Z" finished-at="2018-12-10T05:08:56Z">
+        <test-method status="PASS" signature="makeAppointmentTest()[pri:0, instance:com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest@56ac3a89]" name="makeAppointmentTest" duration-ms="23876" started-at="2018-12-10T05:21:53Z" finished-at="2018-12-10T05:22:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- positiveloginTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@490ab905]" name="tearDown" is-config="true" duration-ms="572" started-at="2018-12-10T05:08:56Z" finished-at="2018-12-10T05:08:57Z">
+        </test-method> <!-- makeAppointmentTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest@56ac3a89]" name="tearDown" is-config="true" duration-ms="547" started-at="2018-12-10T05:22:17Z" finished-at="2018-12-10T05:22:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=positiveloginTest status=SUCCESS method=LoginTests.positiveloginTest()[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@490ab905] output={null}]]]>
+                <![CDATA[[TestResult name=makeAppointmentTest status=SUCCESS method=MakeAppointmentTest.makeAppointmentTest()[pri:0, instance:com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest@56ac3a89] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@490ab905]" name="setUp" is-config="true" duration-ms="5684" started-at="2018-12-10T05:08:57Z" finished-at="2018-12-10T05:09:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="invalidUsernameTest()[pri:1, instance:com.curahealthecareTestNG.Tests.login.LoginTests@490ab905]" name="invalidUsernameTest" duration-ms="640" started-at="2018-12-10T05:09:02Z" finished-at="2018-12-10T05:09:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invalidUsernameTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@490ab905]" name="tearDown" is-config="true" duration-ms="679" started-at="2018-12-10T05:09:03Z" finished-at="2018-12-10T05:09:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=invalidUsernameTest status=SUCCESS method=LoginTests.invalidUsernameTest()[pri:1, instance:com.curahealthecareTestNG.Tests.login.LoginTests@490ab905] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDownTest(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Tests.login.LoginTests@490ab905]" name="tearDownTest" is-config="true" duration-ms="43" started-at="2018-12-10T05:09:04Z" finished-at="2018-12-10T05:09:04Z">
+        <test-method status="PASS" signature="tearDownTest(java.lang.String)[pri:0, instance:com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest@56ac3a89]" name="tearDownTest" is-config="true" duration-ms="41" started-at="2018-12-10T05:22:18Z" finished-at="2018-12-10T05:22:18Z">
           <params>
             <param index="0">
               <value>
@@ -145,7 +119,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-      </class> <!-- com.curahealthecareTestNG.Tests.login.LoginTests -->
+      </class> <!-- com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest -->
     </test> <!-- Login tests using Firefox -->
   </suite> <!-- Cura Healthcare Tests -->
 </testng-results>
