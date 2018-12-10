@@ -8,16 +8,17 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driver {
-	
-private Driver() {}
-	
+
+	private Driver() {
+	}
+
 	private static WebDriver driver;
 
 	public static WebDriver getDriver(String browser) {
 		if (driver == null) {
-			
+
 			browser = browser == null ? ConfigurationReader.getProperty("browser") : browser;
-			
+
 			switch (browser) {
 			case "firefox":
 				WebDriverManager.firefoxdriver().setup();
@@ -35,6 +36,7 @@ private Driver() {}
 		}
 		return driver;
 	}
+
 	public static WebDriver getDriver() {
 		return getDriver(null);
 	}
@@ -45,5 +47,5 @@ private Driver() {}
 			driver = null;
 		}
 	}
-	
+
 }

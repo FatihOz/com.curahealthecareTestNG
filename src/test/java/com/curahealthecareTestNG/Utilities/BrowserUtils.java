@@ -10,17 +10,6 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class BrowserUtils {
-	
-	public static void switchToWindow(String targetTitle) {
-		String origin = Driver.getDriver().getWindowHandle();
-		for (String handle : Driver.getDriver().getWindowHandles()) {
-			Driver.getDriver().switchTo().window(handle);
-			if (Driver.getDriver().getTitle().equals(targetTitle)) {
-				return;
-			}
-		}
-		Driver.getDriver().switchTo().window(origin);
-	}
 
 	public static void waitFor(int sec) {
 		try {

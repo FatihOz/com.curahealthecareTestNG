@@ -27,8 +27,7 @@ public abstract class TestBase {
 	protected ExtentReports report;
 	protected ExtentHtmlReporter htmlReporter;
 	protected ExtentTest extentLogger;
-	
-	
+
 	@BeforeTest
 	public void setUpTest() {
 
@@ -41,6 +40,7 @@ public abstract class TestBase {
 		report.setSystemInfo("OS", System.getProperty("os.name"));
 		htmlReporter.config().setReportName("CURA Healthcare Service Automated Test Reports");
 	}
+
 	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true)
 	public void setUp(@Optional String browser) {
@@ -70,12 +70,12 @@ public abstract class TestBase {
 			extentLogger.skip("Test Case Skipped is " + result.getName());
 		}
 		Driver.closeDriver();
-		
+
 	}
-	@Parameters({"browser"})
+
+	@Parameters("browser")
 	@AfterTest
 	public void tearDownTest(String browser) {
-		Driver.closeDriver();
 		report.flush();
 
 	}
