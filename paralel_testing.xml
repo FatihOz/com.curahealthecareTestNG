@@ -2,16 +2,18 @@
 <suite name="Cura Healthcare" verbose="2" 
 parallel="tests" thread-count="2">
 
-	<test name="Login tests ">
-		<packages>
-			<package name="com.curahealthecareTestNG.Tests.login"></package>
-		</packages>
+	<test name="Login tests">
+	<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.curahealthecareTestNG.Tests.login.LoginTests"></class>
+		</classes>
 	</test>
 	
 	<test name="Make Appointment tests">
-		<packages>
-			<package name="com.curahealthecareTestNG.Test.MakeAppoitment"></package>
-		</packages>
+	<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.curahealthecareTestNG.Test.MakeAppoitment.MakeAppointmentTest"></class>
+		</classes>
 	</test>
 
 </suite>

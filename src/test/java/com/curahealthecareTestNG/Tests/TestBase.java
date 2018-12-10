@@ -1,21 +1,21 @@
 package com.curahealthecareTestNG.Tests;
 
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
-
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.curahealthecareTestNG.Pages.LoginPage;
 import com.curahealthecareTestNG.Utilities.BrowserUtils;
 import com.curahealthecareTestNG.Utilities.ConfigurationReader;
 import com.curahealthecareTestNG.Utilities.Driver;
@@ -27,7 +27,8 @@ public abstract class TestBase {
 	protected ExtentReports report;
 	protected ExtentHtmlReporter htmlReporter;
 	protected ExtentTest extentLogger;
-
+	
+	
 	@BeforeTest
 	public void setUpTest() {
 
@@ -40,10 +41,10 @@ public abstract class TestBase {
 		report.setSystemInfo("OS", System.getProperty("os.name"));
 		htmlReporter.config().setReportName("CURA Healthcare Service Automated Test Reports");
 	}
-
+	@Parameters("browser")
 	@BeforeMethod(alwaysRun = true)
-	public void setUp() {
-		driver = Driver.getDriver();
+	public void setUp(@Optional String browser) {
+		driver = Driver.getDriver(browser);
 		actions = new Actions(driver);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		// driver.manage().window().fullscreen();
@@ -69,10 +70,12 @@ public abstract class TestBase {
 			extentLogger.skip("Test Case Skipped is " + result.getName());
 		}
 		Driver.closeDriver();
+		
 	}
-
+	@Parameters({"browser"})
 	@AfterTest
-	public void tearDownTest() {
+	public void tearDownTest(String browser) {
+		Driver.closeDriver();
 		report.flush();
 
 	}

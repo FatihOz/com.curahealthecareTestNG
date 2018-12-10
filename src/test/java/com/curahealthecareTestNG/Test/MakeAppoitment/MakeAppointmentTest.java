@@ -1,9 +1,7 @@
 package com.curahealthecareTestNG.Test.MakeAppoitment;
 
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
 import java.util.Random;
 
 import org.openqa.selenium.By;
@@ -30,7 +28,7 @@ public class MakeAppointmentTest extends TestBase {
 		LoginPage lp = new LoginPage();
 		MakeAppointment mp = new MakeAppointment();
 		lp.login(ConfigurationReader.getProperty("username"), ConfigurationReader.getProperty("password"));
-		
+		BrowserUtils.waitFor(2);
 		String actual = mp.makeAppoitmentPage.getText();
 		String expected = "Make Appointment";
 		Assert.assertEquals(actual, expected);
@@ -70,7 +68,9 @@ public class MakeAppointmentTest extends TestBase {
 		extentLogger = report.createTest("LogOut test");
 		LogoutPage logout = new LogoutPage();
 		logout.hamburgerMenu.click();
+		BrowserUtils.waitFor(2);
 		logout.logoutLink.click();
+		BrowserUtils.waitFor(2);
 		String actual1 = logout.homePage.getText();
 		String expected1 = "We Care About Your Health";
 		Assert.assertEquals(actual1, expected1);
